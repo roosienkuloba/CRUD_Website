@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+        <title>Roosie N. Kuloba</title>
+    </head>
+    <body>
+        <div class="title">
+            <h1>Hello, World</h1>
+            <p>Things I Need To Do:</p>
+        </div>
+    
+        <div class="form">
+            <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+                <input type="text" id="add-todo" placeholder="Thing To-Do">
+                <input type="submit" value="Add" class="btn btn-primary">
+            </form>
+                <p>You Have:</p>
+                <p id = "counter"></p>
+    
+            <table>
+                <tr class = "to-do">
+                    <th><h3>To-Do:</h3></th>
+                </tr>
+                <tbody id = "tasks">
+                </tbody>
+            </table>
+        </div>
+    
+        <div id="edit-box" role="aria-hidden">
+            <form action="javascript:void(0);" method="POST" id="save-edit">
+                <input type="text" id="edit-todo">
+                <input type="submit" value="Save" class="btn btn-success"/>
+                <a onclick="CloseInput()" aria-label="Close">&times;</a>
+            </form>
+        </div>
+    
+        <script src = "script.js"></script>
+    </body>
+</html>
